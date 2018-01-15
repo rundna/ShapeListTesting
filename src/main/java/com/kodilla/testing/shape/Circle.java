@@ -2,17 +2,17 @@ package com.kodilla.testing.shape;
 
 class Circle implements Shape {
     private String item;
-    private Integer n;
+    private Double n;
 
-    public Circle(String item, Integer n) {
+    public Circle(String item, Double n) {
         this.item = item;
-        this.n = n;
+        this.n = 3.14 * n * n;
     }
 
     public String getShapeName(){
         return item;
     }
-    public Integer getField(){
+    public Double getField(){
         return n;
     }
     public String toString(){

@@ -2,17 +2,17 @@ package com.kodilla.testing.shape;
 
 class Square implements Shape {
     private String item;
-    private Integer n;
+    private Double n;
 
-    public Square(String item, Integer n) {
+    public Square(String item, Double n) {
         this.item = item;
-        this.n = n;
+        this.n = n*n;
     }
 
     public String getShapeName(){
         return item;
     }
-    public Integer getField(){
+    public Double getField(){
         return n;
     }
     public String toString(){

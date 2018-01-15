@@ -4,12 +4,10 @@ import java.util.ArrayList;
 import java.lang.*;
 
 public class ShapeCollector {
-    private Shape shape;
     private ArrayList<Shape> figure = new ArrayList<Shape>();
 
-    public ShapeCollector(Shape shape) {
-        this.shape = shape;
-    }
+    public ShapeCollector(){}
+
 
     public void addFigure(Shape shape) {
 
@@ -28,8 +26,8 @@ public class ShapeCollector {
     public void showFigures(){
         for(Shape shape:figure){
             String s = shape.getShapeName();
-            Integer n = shape.getField();
-            System.out.println("Figure: " +s + " area: " +n);
+            Double n = shape.getField();
+            System.out.println("Figure: " +s + ", area: " +n);
         }
 
     }

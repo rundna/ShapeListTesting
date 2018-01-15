@@ -2,17 +2,17 @@ package com.kodilla.testing.shape;
 
 class Triangle implements Shape {
     private String item;
-    private Integer n;
+    private Double n;
 
-    public Triangle(String item, Integer n) {
+    public Triangle(String item, Double a, Double h) {
         this.item = item;
-        this.n = n;
+        this.n = (a * h)/2;
     }
 
     public String getShapeName(){
         return item;
     }
-    public Integer getField(){
+    public Double getField(){
         return n;
     }
     public String toString(){
