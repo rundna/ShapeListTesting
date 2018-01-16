@@ -9,10 +9,13 @@ public class ShapeCollector {
     public ShapeCollector(){}
 
 
-    public void addFigure(Shape shape) {
+    public ArrayList<Shape> addFigure(Shape shape) {
 
         figure.add(shape);
-        //System.out.println(figure);
+        return figure;
+    }
+    ArrayList<Shape> getList(){
+        return figure;
     }
 
     public void removeFigure(Shape shape) {

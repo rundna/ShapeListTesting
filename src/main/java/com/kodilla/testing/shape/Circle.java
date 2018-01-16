@@ -6,7 +6,7 @@ class Circle implements Shape {
 
     public Circle(String item, Double n) {
         this.item = item;
-        this.n = 3.14 * n * n;
+        this.n = 3.14 * n *n;
     }
 
     public String getShapeName(){
@@ -18,6 +18,10 @@ class Circle implements Shape {
     public String toString(){
         return item + " " +n;
     }
+    @Override
+    public boolean equals(Object o){
+        final Circle e = (Circle) o;
+        return this.item.equals(e.item) && this.n.equals(e.n);}
 
 
 }
