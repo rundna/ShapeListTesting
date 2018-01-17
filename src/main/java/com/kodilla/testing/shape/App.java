@@ -12,7 +12,7 @@ public class App {
         drawer.addFigure(t);
         drawer.addFigure(s);
         drawer.showFigures();
-        //drawer.removeFigure(s);
+        drawer.removeFigure(s);
         drawer.getFigure(1);
         drawer.showFigures();
 

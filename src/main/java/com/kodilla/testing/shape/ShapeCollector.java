@@ -22,8 +22,8 @@ public class ShapeCollector {
         figure.remove(shape);
         //System.out.println(figure);
     }
-    public void getFigure(Integer n){
-        Shape s = figure.get(n);
+    public Shape getFigure(Integer n){
+        return figure.get(n);
         //System.out.println(s);
     }
     public void showFigures(){

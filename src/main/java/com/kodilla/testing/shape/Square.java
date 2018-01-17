@@ -18,10 +18,7 @@ class Square implements Shape {
     public String toString(){
         return item + " " +n;
     }
-    @Override
-    public boolean equals(Object o){
-        final Square e = (Square) o;
-       return this.item.equals(e.item) && this.n.equals(e.n);}
+
 
 
 }
